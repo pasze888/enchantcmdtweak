@@ -1,4 +1,4 @@
-# enchantcmdtweak 知识库
+# enchantcmdtweak 已验证 API 事实
 
 ## 已验证 API 签名（1.21.1 / NeoForge 21.1.244，build 通过）
 
