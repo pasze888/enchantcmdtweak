@@ -1,0 +1,14 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - '*-*-*-*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    uses: pasze888/mc-mod-ci/.github/workflows/release.yml@main
+    secrets: inherit
