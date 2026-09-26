@@ -4,6 +4,16 @@ on:
   push:
     branches:
       - '**'
+    # .gitattributes 刻意不排除：它决定 src/generated/** 的换行，会影响产物
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+      - 'LICENSE*'
+      - 'NOTICE'
+      - 'TEMPLATE_LICENSE.txt'
+      - 'logo.png'
+      - '.gitignore'
+  # pull_request 不加 paths 过滤：被过滤跳过的必需检查会停在 Pending，会卡住 PR 合并
   pull_request:
 
 permissions:
